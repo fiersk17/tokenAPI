@@ -149,11 +149,10 @@ Request:
 
 **Request**
 
-    /getTokenHistory
+    /getTokenHistory/[address]
 
 Additional params
 
-    token:   show operations for specified token address only
     type:    show operations of specified type only
     tsAfter: show operations with timestamp greater than this value
     limit:   maximum number of operations [1 - 10, default = 10]
@@ -177,9 +176,13 @@ Additional params
     }
 **Examples**
 
-Request:
+Show last 10 token operations:
 
-    /getTokenHistory?apiKey=xxxxxxx&token=0xff71cb760666ab06aa73f34995b42dd4b85ea07b&type=transfer&limit=5
+    /getTokenHistory?apiKey=xxxxxxx
+
+Show last 5 transfers for token at address 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
+
+    /getTokenHistory/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=xxxxxxx&type=transfer&limit=5
 ***
 
 ### Error response

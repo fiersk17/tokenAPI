@@ -38,6 +38,22 @@ Each request should have a mandatory apiKey parameter.
         countOps:    # total count of token operations
     }
 
+**Examples**
+
+Request:
+
+    /getTokenInfo/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=xxxxxxx
+Response:
+
+    {
+        address:     "0xff71cb760666ab06aa73f34995b42dd4b85ea07b",
+        totalSupply: "1000000000",
+        name:        "THBEX",
+        symbol:      "THBEX",
+        decimals:    "4",
+        owner:       "0x6016dca5eb73590fa875fcf32bdb74905a4323bd",
+        countOps:    320
+    }
 ***
 
 ###Get address info
@@ -77,6 +93,13 @@ Additional params
         ],
         countTxs:    # Total count of incoming and outcoming transactions (including creation one),
     }
+
+**Examples**
+
+Request:
+
+    /getAddressInfo/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=xxxxxxx
+
 ***
 
 ###Get transaction info
@@ -114,6 +137,12 @@ Additional params
             ...
         ]
     }
+
+**Examples**
+
+Request:
+
+    /getTxInfo/0x6aa670c983425eba23314459c48ae89b3b8d0e1089397c56400ce2da5ece9d26?apiKey=xxxxxxx
 ***
 
 ###Get last token operations
@@ -146,7 +175,11 @@ Additional params
             ...
         ]
     }
+**Examples**
 
+Request:
+
+    /getTokenHistory?apiKey=xxxxxxx&token=0xff71cb760666ab06aa73f34995b42dd4b85ea07b&type=transfer&limit=5
 ***
 
 ### Error response

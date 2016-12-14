@@ -124,10 +124,10 @@ Additional params
 
 Additional params
 
-    token: show operations for specified token address only
-    type: show operations of specified type only
+    token:   show operations for specified token address only
+    type:    show operations of specified type only
     tsAfter: show operations with timestamp greater than this value
-    limit: maximum number of operations [1 - 10, default = 10]
+    limit:   maximum number of operations [1 - 10, default = 10]
 
 **Response**
 

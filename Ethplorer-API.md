@@ -7,8 +7,10 @@ If you need more data or highload of service – contact us to get personal API 
 Api's server address: https://api.ethplorer.io/, method GET.
 Each request should have a mandatory apiKey parameter.
 ***
-Methods
-* [Get token info](Get token info)
+## Methods
+
+* [Get token info](#Get token info)
+
 ***
 
 ### Get token info
@@ -137,4 +139,3 @@ Additional params
             ...
         ]
     }
-

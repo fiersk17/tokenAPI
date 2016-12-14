@@ -1,11 +1,15 @@
 Ethplorer’s API may be used to get information about Ethereum tokens, contracts, transactions and custom structures. This is still beta version of service. There is no any warranty for provided data.
 
-Free API-Key is “freekey”. Please don’t overload our servers. We would much appreaciate “Powered by ethplorer.io” backlink on your pages.
+Free API-Key is `freekey`. Please don’t overload our servers. We would much appreaciate “Powered by ethplorer.io” backlink on your pages.
 If you need more data or highload of service – contact us to get personal API key. 
 
 # API Index
-Api's server address: https://api.ethplorer.io/, method POST, GET (recommended to test purposes only) .
+Api's server address: https://api.ethplorer.io/, method GET.
 Each request should have a mandatory apiKey parameter.
+***
+Methods
+* [Get token info](Get token info)
+***
 
 ### Get token info
 
@@ -32,7 +36,7 @@ Each request should have a mandatory apiKey parameter.
 **Request**
 
     /getAddressInfo/{address}
-Additional params (POST)
+Additional params
 
     token: show balances for specified token address only
 
@@ -109,7 +113,7 @@ Additional params (POST)
 
     /getTokenHistory
 
-Additional params (POST)
+Additional params
 
     token: show operations for specified token address only
     type: show operations of specified type only
@@ -133,3 +137,4 @@ Additional params (POST)
             ...
         ]
     }
+

@@ -9,7 +9,10 @@ Each request should have a mandatory apiKey parameter.
 ***
 ## Methods
 
-* [Get token info](#Get token info)
+* [getTokenInfo](#get-token-info)
+* [getAddressInfo](#get-address-info)
+* [getTxInfo](#get-transaction-info)
+* [getTokenHistory](#get-last-token-operations)
 
 ***
 

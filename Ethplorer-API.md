@@ -147,6 +147,8 @@ Additional params
         ]
     }
 
+***
+
 ### Error response
     {
         error: {

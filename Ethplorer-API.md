@@ -6,13 +6,17 @@ If you need more data or highload of service – contact us to get personal API 
 # API Index
 Api's server address: https://api.ethplorer.io/, method GET.
 Each request should have a mandatory apiKey parameter.
-***
+
 ## Methods
 
 * [getTokenInfo](#get-token-info)
 * [getAddressInfo](#get-address-info)
 * [getTxInfo](#get-transaction-info)
 * [getTokenHistory](#get-last-token-operations)
+
+## Errors
+
+* [Error response](#error-response)
 
 ***
 
@@ -141,4 +145,12 @@ Additional params
             },
             ...
         ]
+    }
+
+### Error response
+    {
+        error: {
+            code:    # error code (integer),
+            message: # error message
+        }
     }

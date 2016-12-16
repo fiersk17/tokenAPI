@@ -75,11 +75,9 @@ Additional params
             totalOut: # Total outgoing ETH value
         },
         contractInfo: {  # exists if specified address is a contract
-            created: {   # contract creation information
-               creatorAddress:  # contract creator address,
-               transactionHash: # contract creation transaction hash,
-               timestamp:       # contract creation timestamp
-            }
+           creatorAddress:  # contract creator address,
+           transactionHash: # contract creation transaction hash,
+           timestamp:       # contract creation timestamp
         },
         tokenInfo:  # exists if specified address is a token contract address (same format as token info),
         tokens: [   # exists if specified address has any token balances

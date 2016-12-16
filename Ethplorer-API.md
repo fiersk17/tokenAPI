@@ -42,7 +42,7 @@ Each request should have a mandatory apiKey parameter.
 
 Request:
 
-    /getTokenInfo/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=xxxxxxx
+    /getTokenInfo/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=freekey
 Response:
 
     {
@@ -96,7 +96,7 @@ Additional params
 
 Request:
 
-    /getAddressInfo/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=xxxxxxx
+    /getAddressInfo/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=freekey
 
 ***
 
@@ -140,7 +140,7 @@ Request:
 
 Request:
 
-    /getTxInfo/0x6aa670c983425eba23314459c48ae89b3b8d0e1089397c56400ce2da5ece9d26?apiKey=xxxxxxx
+    /getTxInfo/0x6aa670c983425eba23314459c48ae89b3b8d0e1089397c56400ce2da5ece9d26?apiKey=freekey
 ***
 
 ###Get last token operations
@@ -176,11 +176,11 @@ Additional params
 
 Show last 10 token operations:
 
-    /getTokenHistory?apiKey=xxxxxxx
+    /getTokenHistory?apiKey=freekey
 
 Show last 5 transfers for token at address 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
 
-    /getTokenHistory/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=xxxxxxx&type=transfer&limit=5
+    /getTokenHistory/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=freekey&type=transfer&limit=5
 ***
 
 ### Error response

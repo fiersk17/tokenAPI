@@ -82,6 +82,7 @@ Additional params
                timestamp:       # contract creation timestamp
             }
         },
+        tokenInfo:  # exists if specified address is a token contract address (same format as token info),
         tokens: [   # exists if specified address has any token balances
             {
                 tokenInfo: # token data (same format as token info),

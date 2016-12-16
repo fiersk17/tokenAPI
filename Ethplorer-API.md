@@ -75,7 +75,6 @@ Additional params
             totalOut: # Total outgoing ETH value
         },
         contractInfo: {  # exists if specified address is a contract
-            code:        # contract code,
             created: {   # contract creation information
                creatorAddress:  # contract creator address,
                transactionHash: # contract creation transaction hash,

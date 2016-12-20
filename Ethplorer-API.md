@@ -216,7 +216,7 @@ Additional params
 
 Show last MKR token transfers for address 0x1f5006dff7e123d550abc8a4c46792518401fcaf:
 
-    /getAddressHistory/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey&token=0xc66ea802717bfb9833400264dd12c2bceaa34a6dtype=transfer
+    /getAddressHistory/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey&token=0xc66ea802717bfb9833400264dd12c2bceaa34a6d&type=transfer
 ***
 
 ### Error response

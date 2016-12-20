@@ -153,7 +153,6 @@ Request:
 Additional params
 
     type:    show operations of specified type only
-    tsAfter: show operations with timestamp greater than this value
     limit:   maximum number of operations [1 - 10, default = 10]
 
 **Response**
@@ -192,9 +191,8 @@ Show last 5 transfers for token at address 0xff71cb760666ab06aa73f34995b42dd4b85
 
 Additional params
 
-    token:   show only specified token operations
+    token:   show only specified token address operations
     type:    show operations of specified type only
-    tsAfter: show operations with timestamp greater than this value
     limit:   maximum number of operations [1 - 10, default = 10]
 
 **Response**
@@ -218,7 +216,7 @@ Additional params
 
 Show last MKR token transfers for address 0x1f5006dff7e123d550abc8a4c46792518401fcaf:
 
-    /getAddressHistory/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey&&token=0xc66ea802717bfb9833400264dd12c2bceaa34a6dtype=transfer
+    /getAddressHistory/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey&token=0xc66ea802717bfb9833400264dd12c2bceaa34a6dtype=transfer
 ***
 
 ### Error response

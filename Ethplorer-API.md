@@ -191,6 +191,7 @@ Show last 5 transfers for token at address 0xff71cb760666ab06aa73f34995b42dd4b85
     /getAddressHistory/{address}
 
 Additional params
+
     token:   show only specified token operations
     type:    show operations of specified type only
     tsAfter: show operations with timestamp greater than this value

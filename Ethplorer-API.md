@@ -13,6 +13,7 @@ Each request should have a mandatory apiKey parameter.
 * [getAddressInfo](#get-address-info)
 * [getTxInfo](#get-transaction-info)
 * [getTokenHistory](#get-last-token-operations)
+* [getAddressHistory](#get-last-address-operations)
 
 ## Errors
 

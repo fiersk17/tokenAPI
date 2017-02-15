@@ -14,6 +14,7 @@ Each request should have a mandatory apiKey parameter.
 * [getTxInfo](#get-transaction-info)
 * [getTokenHistory](#get-last-token-operations)
 * [getAddressHistory](#get-last-address-operations)
+* [getTokenHistoryGrouped](#get-grouped-token-history)
 
 ## Errors
 
@@ -217,6 +218,40 @@ Additional params
 Show last MKR token transfers for address 0x1f5006dff7e123d550abc8a4c46792518401fcaf:
 
     /getAddressHistory/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey&token=0xc66ea802717bfb9833400264dd12c2bceaa34a6d&type=transfer
+***
+
+###Get grouped token history
+
+**Request**
+
+    /getTokenHistoryGrouped
+
+Additional params
+
+    token:   show operations for specified token address only [optional, all tokens if not set]
+    period:  show operations of specified days number only [optional, 30 days if not set, max. is 90 days]
+
+**Response**
+
+    {
+        countTxs: [        # grouped token history
+            {
+                _id: {
+                    year:  # transaction year
+                    month: # transaction month
+                    day:   # transaction day
+                },
+                ts:        # timestamp of the first transaction in group
+                cnt:       # number of transaction in group
+            },
+            ...
+        ]
+    }
+**Examples**
+
+Show operations for token 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
+
+    /getTokenHistoryGrouped?apiKey=freekey&token=0xff71cb760666ab06aa73f34995b42dd4b85ea07b
 ***
 
 ### Error response

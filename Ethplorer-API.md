@@ -224,11 +224,10 @@ Show last MKR token transfers for address 0x1f5006dff7e123d550abc8a4c46792518401
 
 **Request**
 
-    /getTokenHistoryGrouped
+    /getTokenHistoryGrouped/[address]
 
 Additional params
 
-    token:   show operations for specified token address only [optional, all tokens if not set]
     period:  show operations of specified days number only [optional, 30 days if not set, max. is 90 days]
 
 **Response**
@@ -249,9 +248,9 @@ Additional params
     }
 **Examples**
 
-Show operations for token 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
+Show operations for token at address 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
 
-    /getTokenHistoryGrouped?apiKey=freekey&token=0xff71cb760666ab06aa73f34995b42dd4b85ea07b
+    /getTokenHistoryGrouped/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=freekey
 ***
 
 ### Error response

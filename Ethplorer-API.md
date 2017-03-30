@@ -58,7 +58,7 @@ Response:
     }
 ***
 
-###Get address info
+###　Get address info
 
 **Request**
 
@@ -102,7 +102,7 @@ Request:
 
 ***
 
-###Get transaction info
+###　Get transaction info
 
 **Request**
 
@@ -145,7 +145,7 @@ Request:
     /getTxInfo/0x6aa670c983425eba23314459c48ae89b3b8d0e1089397c56400ce2da5ece9d26?apiKey=freekey
 ***
 
-###Get last token operations
+###　Get last token operations
 
 **Request**
 
@@ -184,7 +184,7 @@ Show last 5 transfers for token at address 0xff71cb760666ab06aa73f34995b42dd4b85
     /getTokenHistory/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=freekey&type=transfer&limit=5
 ***
 
-###Get last address operations
+###　Get last address operations
 
 **Request**
 
@@ -220,7 +220,7 @@ Show last MKR token transfers for address 0x1f5006dff7e123d550abc8a4c46792518401
     /getAddressHistory/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey&token=0xc66ea802717bfb9833400264dd12c2bceaa34a6d&type=transfer
 ***
 
-###Get grouped token history
+###　Get grouped token history
 
 **Request**
 

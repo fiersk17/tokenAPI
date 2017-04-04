@@ -253,7 +253,7 @@ Additional params
 
 **Examples**
 
-Show operations for token at address 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
+Shows top 50 of the most active tokins for the last 30 days period:
 
     /getTopTokens?apiKey=freekey
 ***

@@ -253,7 +253,7 @@ Additional params
 
 **Examples**
 
-Shows top 50 of the most active tokins for the last 30 days period:
+Shows top 50 of the most active tokens for the last 30 days period:
 
     /getTopTokens?apiKey=freekey
 ***

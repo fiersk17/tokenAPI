@@ -14,6 +14,7 @@ Each request should have a mandatory apiKey parameter.
 * [getTxInfo](#get-transaction-info)
 * [getTokenHistory](#get-last-token-operations)
 * [getAddressHistory](#get-last-address-operations)
+* [getTopTokens](#get-top-tokens)
 * [getTokenHistoryGrouped](#get-grouped-token-history)
 
 ## Errors
@@ -31,13 +32,17 @@ Each request should have a mandatory apiKey parameter.
 **Response**
 
     {
-        address:     # token address,
-        totalSupply: # total token supply,
-        name:        # token name,
-        symbol:      # token symbol,
-        decimals:    # number of significant digits,
-        owner:       # token owner address,
-        countOps:    # total count of token operations
+        address:        # token address,
+        totalSupply:    # total token supply,
+        name:           # token name,
+        symbol:         # token symbol,
+        decimals:       # number of significant digits,
+        owner:          # token owner address,
+        countOps:       # total count of token operations
+        totalIn:        # total amount of incoming tokens
+        totalOut:       # total amount of outgoing tokens
+        holdersCount:   # total numnber of token holders
+        issuancesCount: # total count of token issuances
     }
 
 **Examples**
@@ -49,12 +54,16 @@ Response:
 
     {
         address:     "0xff71cb760666ab06aa73f34995b42dd4b85ea07b",
-        totalSupply: "1000000000",
+        totalSupply: "3020000000",
         name:        "THBEX",
         symbol:      "THBEX",
         decimals:    "4",
         owner:       "0x6016dca5eb73590fa875fcf32bdb74905a4323bd",
-        countOps:    320
+        countOps:    753
+        totalIn: 20921963137
+        totalOut: 17901963137
+        holdersCount: 78
+        issuancesCount: 3
     }
 ***
 
@@ -218,6 +227,35 @@ Additional params
 Show last MKR token transfers for address 0x1f5006dff7e123d550abc8a4c46792518401fcaf:
 
     /getAddressHistory/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey&token=0xc66ea802717bfb9833400264dd12c2bceaa34a6d&type=transfer
+***
+
+### Get top tokens
+
+**Request**
+
+    /getTopTokens
+
+Additional params
+
+    period:  show tokens for specified days period only [optional, 30 days if not set, max. is 30 days for free API key]
+    limit:   maximum number of tokens [1 - 50, default = 50]
+
+**Response**
+
+    {
+        tokens: [        
+            {
+                # token data (same format as token info)
+            },
+            ...
+        ]
+    }
+
+**Examples**
+
+Show operations for token at address 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
+
+    /getTopTokens?apiKey=freekey
 ***
 
 ### Get grouped token history

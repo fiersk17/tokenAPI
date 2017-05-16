@@ -37,7 +37,7 @@ Each request should have a mandatory apiKey parameter.
         name:           # token name,
         symbol:         # token symbol,
         decimals:       # number of significant digits,
-        price: {        # token price (false, if token is non-tradeble)
+        price: {        # token price (false, if not available)
             rate:       # current rate
             currency:   # token price currency (USD)
             diff:       # 24 hour rate difference (in percent)

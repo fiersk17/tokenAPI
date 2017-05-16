@@ -59,23 +59,23 @@ Request:
 Response:
 
     {
-        address:     "0xff71cb760666ab06aa73f34995b42dd4b85ea07b",
-        totalSupply: "3020000000",
-        name:        "THBEX",
-        symbol:      "THBEX",
-        decimals:    "4",
+        address:     "0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5",
+        totalSupply: "11000000000000000000000000",
+        name:        "Augur Rep",
+        symbol:      "REP",
+        decimals:    "18",
         price: {
-            rate:     35.6,
+            rate:     15.55,
             currency: 'USD',
-            diff:     -4.3,
-            ts:       1494918314
+            diff:     -5.99,
+            ts:       1494919234
         },
-        owner:       "0x6016dca5eb73590fa875fcf32bdb74905a4323bd",
-        countOps:    753
+        owner:       "0x",
+        countOps:    77762
         totalIn: 20921963137
         totalOut: 17901963137
-        holdersCount: 78
-        issuancesCount: 3
+        holdersCount: 12173
+        issuancesCount: 0
     }
 ***
 

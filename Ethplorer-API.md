@@ -59,22 +59,22 @@ Request:
 Response:
 
     {
-        address:     "0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5",
-        totalSupply: "11000000000000000000000000",
-        name:        "Augur Rep",
-        symbol:      "REP",
-        decimals:    "18",
+        address:        "0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5",
+        totalSupply:    "11000000000000000000000000",
+        name:           "Augur Rep",
+        symbol:         "REP",
+        decimals:       "18",
         price: {
-            rate:     15.55,
-            currency: 'USD',
-            diff:     -5.99,
-            ts:       1494919234
+            rate:       15.55,
+            currency:   'USD',
+            diff:       -5.99,
+            ts:         1494919234
         },
-        owner:       "0x",
-        countOps:    77762
-        totalIn: 20921963137
-        totalOut: 17901963137
-        holdersCount: 12173
+        owner:          "0x",
+        countOps:       77762
+        totalIn:        20921963137
+        totalOut:       17901963137
+        holdersCount:   12173
         issuancesCount: 0
     }
 ***

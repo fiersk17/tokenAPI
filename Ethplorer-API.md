@@ -37,6 +37,12 @@ Each request should have a mandatory apiKey parameter.
         name:           # token name,
         symbol:         # token symbol,
         decimals:       # number of significant digits,
+        price: {        # token price (false, if token is non-tradeble)
+            rate:       # current rate
+            currency:   # token price currency (USD)
+            diff:       # 24 hour rate difference (in percent)
+            ts:         # last rate update timestamp
+        },
         owner:          # token owner address,
         countOps:       # total count of token operations
         totalIn:        # total amount of incoming tokens
@@ -58,6 +64,12 @@ Response:
         name:        "THBEX",
         symbol:      "THBEX",
         decimals:    "4",
+        price: {
+            rate:     35.6,
+            currency: 'USD',
+            diff:     -4.3,
+            ts:       1494918314
+        },
         owner:       "0x6016dca5eb73590fa875fcf32bdb74905a4323bd",
         countOps:    753
         totalIn: 20921963137

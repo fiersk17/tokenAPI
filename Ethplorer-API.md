@@ -244,6 +244,8 @@ Show last MKR token transfers for address 0x1f5006dff7e123d550abc8a4c46792518401
 
 ### Get address transactions
 
+Returns list of address transactions.
+
 **Request**
 
     /getAddressTransactions/{address}
@@ -267,7 +269,7 @@ Additional params
     ]
 **Examples**
 
-    /getAddressTransactions/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey
+    /getAddressTransactions/0xb297cacf0f91c86dd9d2fb47c6d12783121ab780?apiKey=freekey
 ***
 
 

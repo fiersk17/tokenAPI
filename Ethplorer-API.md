@@ -14,6 +14,7 @@ Each request should have a mandatory apiKey parameter.
 * [getTxInfo](#get-transaction-info)
 * [getTokenHistory](#get-last-token-operations)
 * [getAddressHistory](#get-last-address-operations)
+* [getAddressTransactions](#get-address-transactions)
 * [getTopTokens](#get-top-tokens)
 * [getTokenHistoryGrouped](#get-grouped-token-history)
 
@@ -240,6 +241,35 @@ Show last MKR token transfers for address 0x1f5006dff7e123d550abc8a4c46792518401
 
     /getAddressHistory/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey&token=0xc66ea802717bfb9833400264dd12c2bceaa34a6d&type=transfer
 ***
+
+### Get address transactions
+
+**Request**
+
+    /getAddressTransactions/{address}
+
+Additional params
+
+    limit:   maximum number of operations [1 - 50, default = 10]
+    showZeroValues:  show transactions with zero ETH value, default = 0
+
+**Response**
+
+    [
+        {
+            timestamp:       # operation timestamp
+            from:            # source address (if two addresses involved),
+            to:              # destination address (if two addresses involved),
+            hash:            # transaction hash
+            value:           # ETH value (as is, not reduced to a floating point value),
+            input:           # input data
+        },
+    ]
+**Examples**
+
+    /getAddressTransactions/0x1f5006dff7e123d550abc8a4c46792518401fcaf?apiKey=freekey
+***
+
 
 ### Get top tokens
 

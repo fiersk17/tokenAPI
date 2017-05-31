@@ -265,6 +265,7 @@ Additional params
             hash:            # transaction hash
             value:           # ETH value (as is, not reduced to a floating point value),
             input:           # input data
+            success:         # true if transactions was completed, false if failed
         },
     ]
 **Examples**

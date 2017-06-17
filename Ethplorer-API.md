@@ -17,6 +17,7 @@ Each request should have a mandatory apiKey parameter.
 * [getAddressTransactions](#get-address-transactions)
 * [getTopTokens](#get-top-tokens)
 * [getTokenHistoryGrouped](#get-grouped-token-history)
+* [getTokenPriceHistoryGrouped](#get-grouped-token-price-history)
 
 ## Errors
 
@@ -334,6 +335,64 @@ Additional params
 Show operations for token at address 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
 
     /getTokenHistoryGrouped/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=freekey
+***
+
+### Error response
+    {
+        error: {
+            code:    # error code (integer),
+            message: # error message
+        }
+    }
+***
+
+### Get grouped token price history
+
+**Request**
+
+    /getTokenPriceHistoryGrouped/[address]
+
+Additional params
+
+    period:  show operations of specified days number only [optional, 365 days if not set]
+
+**Response**
+
+    {   history
+        {
+            countTxs: [        # grouped token history
+                {
+                    _id: {
+                        year:  # transaction year
+                        month: # transaction month
+                        day:   # transaction day
+                    },
+                    ts:        # timestamp of the first transaction in group
+                    cnt:       # number of transaction in group
+                },
+                ...
+            ],
+            prices: [                 # grouped token price history
+                {
+                    ts:               # timestamp of the token price
+                    date:             # date of the token price in YYYY-MM-DD format
+                    open:             # open token price
+                    close:            # close token price
+                    high:             # hign token price
+                    low:              # low token price
+                    volume:           # volume
+                    volumeConverted:  # volume in USD
+                    average:          # average token price
+                },
+                ...
+            ]
+        }
+    }
+**Examples**
+
+Show price histiry for token at address 0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5:
+
+    /getTokenPriceHistoryGrouped/0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5?apiKey=freekey
 ***
 
 ### Error response

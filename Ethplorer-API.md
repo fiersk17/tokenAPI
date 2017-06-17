@@ -354,7 +354,7 @@ Show operations for token at address 0xff71cb760666ab06aa73f34995b42dd4b85ea07b:
 
 Additional params
 
-    period:  show operations of specified days number only [optional, 365 days if not set]
+    period:  show price history of specified days number only [optional, 365 days if not set]
 
 **Response**
 

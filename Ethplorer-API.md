@@ -390,7 +390,7 @@ Additional params
     }
 **Examples**
 
-Show price histiry for token at address 0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5:
+Get price history for the token at address 0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5:
 
     /getTokenPriceHistoryGrouped/0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5?apiKey=freekey
 ***

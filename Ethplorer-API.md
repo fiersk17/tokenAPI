@@ -275,7 +275,7 @@ Additional params
     /getAddressTransactions/0xb297cacf0f91c86dd9d2fb47c6d12783121ab780?apiKey=freekey
 ***
 
-### Get top tokens
+### Get top
 
 **Request**
 

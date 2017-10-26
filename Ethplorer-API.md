@@ -15,6 +15,7 @@ Each request should have a mandatory apiKey parameter.
 * [getTokenHistory](#get-last-token-operations)
 * [getAddressHistory](#get-last-address-operations)
 * [getAddressTransactions](#get-address-transactions)
+* [getTop](#get-top)
 * [getTopTokens](#get-top-tokens)
 * [getTokenHistoryGrouped](#get-grouped-token-history)
 * [getTokenPriceHistoryGrouped](#get-grouped-token-price-history)
@@ -274,6 +275,35 @@ Additional params
     /getAddressTransactions/0xb297cacf0f91c86dd9d2fb47c6d12783121ab780?apiKey=freekey
 ***
 
+### Get top tokens
+
+**Request**
+
+    /getTop
+
+Additional params
+
+    criteria: sort tokens by criteria [optional, trade - by trade volume, cap - by capitalization, count - by operations]
+    limit:    maximum number of tokens [optional, 1 - 50, default = 50]
+
+**Response**
+
+    {
+        tokens: [        
+            {
+                # token data (same format as token info),
+                # token data by criteria and period (e.g. volume-7d-current - trade volume by latest 7 days, volume-7d-previous - trade volume by previous 7 days etc.)
+            },
+            ...
+        ]
+    }
+
+**Examples**
+
+Shows top 50 tokens by capitalization:
+
+    /getTop?apiKey=freekey&criteria=cap
+***
 
 ### Get top tokens
 

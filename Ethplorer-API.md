@@ -283,7 +283,7 @@ Additional params
 
 Additional params
 
-    criteria: sort tokens by criteria [optional, trade - by trade volume, cap - by capitalization, count - by operations]
+    criteria: sort tokens by criteria [optional, trade - by trade volume, cap - by capitalization, count - by operations, default = trade]
     limit:    maximum number of tokens [optional, 1 - 50, default = 50]
 
 **Response**

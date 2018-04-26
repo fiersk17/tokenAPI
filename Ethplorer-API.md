@@ -13,13 +13,13 @@ If you need more data or highload of service – [contact us](http://bit.ly/ethp
 
     Requests per minute: 30
     Max count of transactions/operations in response: 10
-    Max deep for list of transactions/operations: 30 days
+    Max age for start-timestamp parameter: 30 days
 
 ### Personal key limits
 
     Requests per minute: 600
     Max count of transactions/operations in response: 1000
-    Max deep for list of transactions/operations: 1 year
+    Max age for start-timestamp parameter: 1 year
     *Limits may be increased by request.
 
 

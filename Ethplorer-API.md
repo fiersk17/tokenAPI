@@ -9,7 +9,7 @@ If you need more data or highload of service – [contact us](http://bit.ly/ethp
 
 ## New API Keys Limits (starts from 10 May 2018)
 
-### Free key limits
+### Freekey limits
 
     Requests per minute: 30
     Max count of transactions/operations in response: 10

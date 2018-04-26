@@ -13,13 +13,13 @@ If you need more data or highload of service – [contact us](http://bit.ly/ethp
 
     Requests per minute: 30
     Max count of transactions/operations in response: 10
-    Max offset for list of transactions/operations: 10000
+    Max deep for list of transactions/operations: 30 days
 
 ### Personal key limits
 
     Requests per minute: 600
     Max count of transactions/operations in response: 1000
-    Max offset for list of transactions/operations: 100000
+    Max deep for list of transactions/operations: 1 year
     *Limits may be increased by request.
 
 

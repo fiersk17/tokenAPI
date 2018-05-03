@@ -203,6 +203,8 @@ Additional params
     type:      show operations of specified type only
     limit:     maximum number of operations [1 - 10, default = 10]
     timestamp: maximum age for operations [optional, unix timestamp]
+    
+    [New limits](#new-api-keys-limits-starts-from-10-may-2018)
 
 **Response**
 

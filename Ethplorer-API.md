@@ -1,4 +1,4 @@
-Ethplorer’s API may be used to get information about Ethereum tokens, contracts, transactions and custom structures. This is still beta version of service. There is no any warranty for provided data.
+Ethplorer’s get-token-infoAPI may be used to get information about Ethereum tokens, contracts, transactions and custom structures. This is still beta version of service. There is no any warranty for provided data.
 
 Free API-Key is `freekey`. Please don’t overload our servers. 
 
@@ -202,7 +202,7 @@ Additional params
 
     type:      show operations of specified type only
     limit:     maximum number of operations [1 - 10, default = 10]
-    timestamp: maximum age for operations [optional, unix timestamp]
+    timestamp: maximum age for operations [optional, unix timestamp] (#freekey-limits)
 
 **Response**
 

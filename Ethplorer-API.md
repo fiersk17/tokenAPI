@@ -13,14 +13,14 @@ If you need more data or highload of service – [contact us](http://bit.ly/ethp
 
     Requests per minute: 30
     Max count of transactions/operations in response: 10
-    Max age for start-timestamp parameter: 30 days
+    Max age for timestamp parameter: 30 days
     Requests method getAddressInfo per minute: 10
 
 ### Personal key limits
 
     Requests per minute: 600
     Max count of transactions/operations in response: 1000
-    Max age for start-timestamp parameter: 1 year
+    Max age for timestamp parameter: 1 year
     *Limits may be increased by request.
 
 

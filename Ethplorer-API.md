@@ -200,8 +200,9 @@ Request:
 
 Additional params
 
-    type:    show operations of specified type only
-    limit:   maximum number of operations [1 - 10, default = 10]
+    type:      show operations of specified type only
+    limit:     maximum number of operations [1 - 10, default = 10]
+    timestamp: maximum age for operations [optional, unix timestamp]
 
 **Response**
 
@@ -239,9 +240,10 @@ Show last 5 transfers for token at address 0xff71cb760666ab06aa73f34995b42dd4b85
 
 Additional params
 
-    token:   show only specified token address operations
-    type:    show operations of specified type only
-    limit:   maximum number of operations [1 - 10, default = 10]
+    token:     show only specified token address operations
+    type:      show operations of specified type only
+    limit:     maximum number of operations [1 - 10, default = 10]
+    timestamp: maximum age for operations [optional, unix timestamp]
 
 **Response**
 
@@ -277,8 +279,9 @@ Returns list of address transactions.
 
 Additional params
 
-    limit:   maximum number of operations [1 - 50, default = 10]
-    showZeroValues:  show transactions with zero ETH value, default = 0
+    limit:          maximum number of operations [1 - 50, default = 10]
+    timestamp:      maximum age for operations [optional, unix timestamp]
+    showZeroValues: show transactions with zero ETH value, default = 0
 
 **Response**
 

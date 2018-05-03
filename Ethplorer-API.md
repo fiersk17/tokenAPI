@@ -201,8 +201,8 @@ Request:
 Additional params
 
     type:      show operations of specified type only
-    limit:     maximum number of operations [1 - 10, default = 10]
-    timestamp: maximum age for operations [optional, unix timestamp]
+    limit:     maximum number of operations [1 - 1000, default = 10]
+    timestamp: starting offset for operations [optional, unix timestamp]
 
 **Response**
 
@@ -243,7 +243,7 @@ Additional params
     token:     show only specified token address operations
     type:      show operations of specified type only
     limit:     maximum number of operations [1 - 10, default = 10]
-    timestamp: maximum age for operations [optional, unix timestamp]
+    timestamp: starting offset for operations [optional, unix timestamp]
 
 **Response**
 
@@ -280,7 +280,7 @@ Returns list of address transactions.
 Additional params
 
     limit:          maximum number of operations [1 - 50, default = 10]
-    timestamp:      maximum age for operations [optional, unix timestamp]
+    timestamp:      starting offset for operations [optional, unix timestamp]
     showZeroValues: show transactions with zero ETH value, default = 0
 
 **Response**

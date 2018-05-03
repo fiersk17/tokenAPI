@@ -7,7 +7,7 @@ Also, we would much appreciate “Powered by [Ethplorer.io](https://ethplorer.io
 
 If you need more data or highload of service – [contact us](http://bit.ly/ethp-contact) to get personal API key (it's free of charge). 
 
-## [New API Keys Limits (starts from 10 May 2018)](#api-key-limits)
+## API Keys Limits
 
 ### Freekey limits
 

@@ -1,4 +1,4 @@
-Ethplorer’s get-token-infoAPI may be used to get information about Ethereum tokens, contracts, transactions and custom structures. This is still beta version of service. There is no any warranty for provided data.
+Ethplorer’s API may be used to get information about Ethereum tokens, contracts, transactions and custom structures. This is still beta version of service. There is no any warranty for provided data.
 
 Free API-Key is `freekey`. Please don’t overload our servers. 
 

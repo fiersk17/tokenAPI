@@ -1,6 +1,6 @@
-Ethplorer’s API may be used to get information about Ethereum tokens, contracts, transactions and custom structures. This is still beta version of service. There is no any warranty for provided data.
+Ethplorer’s API is useful to get information about Ethereum tokens, balances, addresses, contracts, transactions and custom structures. There is no any warranty for provided data.
 
-Free API-Key is `freekey`. Please don’t overload our servers. 
+Free API-Key is `freekey`. Please do not overload the servers. 
 
 Good idea is to make links to details of transactions directly to Ethplorer's pages.
 Also, we would much appreciate “Powered by [Ethplorer.io](https://ethplorer.io)” backlink on your pages.
@@ -8,6 +8,7 @@ Also, we would much appreciate “Powered by [Ethplorer.io](https://ethplorer.io
 If you need more data or highload of service – [contact us](http://bit.ly/ethp-contact) to get personal API key (it's free of charge). 
 
 ## API Keys Limits
+>**Please do not exceed the limits or you'll be banned**
 
 ### Freekey limits
 
@@ -27,7 +28,7 @@ If you need more data or highload of service – [contact us](http://bit.ly/ethp
 
 
 # API Index
-Api's server address: https://api.ethplorer.io/, method GET.
+API's server address: https://api.ethplorer.io/, method GET.
 Each request should have a mandatory apiKey parameter.
 
 ## Methods

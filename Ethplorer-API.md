@@ -28,7 +28,7 @@ If you need more data or highload of service – [contact us](http://bit.ly/ethp
 
 
 # API Index
-API's server address: https://api.ethplorer.io/, method GET.
+API's server address: http://api.ethplorer.io/, method GET.
 Each request should have a mandatory apiKey parameter.
 
 ## Methods

@@ -114,6 +114,7 @@ Response:
 Additional params
 
     token: show balances for specified token address only
+    showETHTotals: request total incoming and outcoming ETH values 
 
 **Response**
 
@@ -121,8 +122,8 @@ Additional params
         address: # address,
         ETH: {   # ETH specific information
             balance:  # ETH balance
-            totalIn:  # Total incoming ETH value
-            totalOut: # Total outgoing ETH value
+            totalIn:  # Total incoming ETH value (showETHTotals parameter should be set to get this value)
+            totalOut: # Total outgoing ETH value (showETHTotals parameter should be set to get this value)
         },
         contractInfo: {  # exists if specified address is a contract
            creatorAddress:  # contract creator address,

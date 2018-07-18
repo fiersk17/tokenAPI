@@ -93,27 +93,34 @@ Each request should have a mandatory apiKey parameter.
 
 Request:
 
-    /getTokenInfo/0xff71cb760666ab06aa73f34995b42dd4b85ea07b?apiKey=freekey
+    /getTokenInfo/0xe94327d07fc17907b4db788e5adf2ed424addff6?apiKey=freekey
 Response:
 
     {
-        address:        "0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5",
-        totalSupply:    "11000000000000000000000000",
-        name:           "Augur Rep",
-        symbol:         "REP",
-        decimals:       "18",
+        address:             "0xe94327d07fc17907b4db788e5adf2ed424addff6",
+        totalSupply:         "11000000000000000000000000",
+        name:                "Reputation",
+        symbol:              "REP",
+        decimals:            "18",
         price: {
-            rate:       15.55,
-            currency:   'USD',
-            diff:       -5.99,
-            ts:         1494919234
+            rate:            32.2496,
+            currency:        'USD',
+            diff:            6.55,
+            diff7d:          1.94,
+            diff30d:         -3.7029295574431,
+            marketCapUsd:    "354745600.0",
+            availableSupply: "11000000.0",
+            volume24h:       "8022040.0"
+            ts:              1531916367
         },
-        owner:          "0x",
-        countOps:       77762
-        totalIn:        20921963137
-        totalOut:       17901963137
-        holdersCount:   12173
-        issuancesCount: 0
+        owner:               "0x7e614ec62cfd5761f20a9c5a2fe2bc0ac7431918",
+        countOps:            224666,
+        totalIn:             20921963137,
+        totalOut:            17901963137,
+        transfersCount:	     224666,
+        holdersCount:        37472,
+        issuancesCount:      0,
+        lastUpdated:         1531896573
     }
 ***
 

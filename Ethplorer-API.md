@@ -12,14 +12,14 @@ If you need more data or highload of service – [contact us](http://bit.ly/ethp
 
 ### Freekey limits
 
-    Requests per minute: 30
+    Requests per second: 0.5 (1 request per 2 seconds)
     Max count of transactions/operations in response: 10
     Max age for timestamp parameter: 30 days
-    getAddressInfo method requests per minute: 10
+    getAddressInfo method: 1 request per 6 second
 
 ### Personal key limits
 
-    Requests per minute: 600
+    Requests per second: 10
     Max count of transactions/operations in response: 1000
     Max age for timestamp parameter: 1 year
     *Limits may be increased by request.

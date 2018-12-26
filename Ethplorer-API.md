@@ -389,7 +389,8 @@ Shows top 50 of the most active tokens for the last 30 days period:
 
 Additional params
 
-    limit:   maximum number of holders [1 - 1000, default = 10]
+    limit:   maximum number of holders [1 - 1000 , default = 10].
+    *for freekey maximum is 100
 
 **Response**
 

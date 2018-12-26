@@ -41,6 +41,7 @@ Each request should have a mandatory apiKey parameter.
 * [getAddressTransactions](#get-address-transactions)
 * [getTop](#get-top)
 * [getTopTokens](#get-top-tokens)
+* [getTopTokenHolders](#get-top-token-holders)
 * [getTokenHistoryGrouped](#get-grouped-token-history)
 * [getTokenPriceHistoryGrouped](#get-grouped-token-price-history)
 
@@ -378,6 +379,36 @@ Additional params
 Shows top 50 of the most active tokens for the last 30 days period:
 
     /getTopTokens?apiKey=freekey
+***
+
+### Get top token holders
+
+**Request**
+
+    /getTopTokenHolders/{address}
+
+Additional params
+
+    limit:   maximum number of holders [1 - 100, default = 10]
+
+**Response**
+
+    {
+        holders: [        
+            {
+                address:   # address of holder,
+                balance:   # token balance,
+                share:     # share of holder in percent
+            },
+            ...
+        ]
+    }
+
+**Examples**
+
+Shows top 100 token holders:
+
+    /getTopTokenHolders/0xe94327d07fc17907b4db788e5adf2ed424addff6?apiKey=freekey&limit=100
 ***
 
 ### Get grouped token history
